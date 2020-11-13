@@ -1,0 +1,221 @@
+*{margin: 0; padding: 0;}
+
+
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+background-image: url(imagem/background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin: 10px;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+
+}
+
+.header{
+    width: 100%;
+}
+
+.container{
+background-color: rgba(128, 128, 128, 0.5);
+width: 100%;
+height: 100%;
+border-radius: 25px;
+}
+
+form{
+    font-size: 20px;
+    height: 5px;
+}
+
+.corpo{
+
+    text-align: left;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-size: 20px;
+}
+
+hr{
+    float: right;
+    height: 2px;
+    width: 100%;
+    color: green;
+    background-color: green;
+}
+
+div{
+    display: inline-block;
+}
+
+.titulos{
+   
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    
+}
+.vazio{
+    
+    width: 83%;
+    height: 10%;
+    
+}
+
+.barra{
+    float: right;
+    
+    background-color: green;
+    
+}
+
+.logo{
+    float: left;
+    width: 15%;
+}
+
+li{
+    font-size: 20px;
+}
+
+/**
+ Menu Dropdown
+**/
+.menu{
+list-style:none;
+border:0px solid #c0c0c0;
+float:right;
+}
+.menu li{
+position:relative;
+float:left;
+border-right:0px solid #c0c0c0;
+}
+
+
+.menu li a{color:white; text-decoration:none; padding:5px 45px ; display:block;}
+
+.menu li a:hover{
+background:green;
+color:lightgreen;
+-moz-box-shadow:0 3px 10px 0 lightgreen;
+-webkit-box-shadow:0 3px 10px 0 lightgreen;
+text-shadow:0px 0px 5px lightgreen;
+}
+
+.menu li  ul{
+position:absolute;
+top:100%;
+left:0;
+background-color:lightgreen;
+display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+border:0px solid #c0c0c0;
+display:block;
+width:99.1%;
+}
+
+@media(max-width:1300px){
+    .menu li a{color:white; text-decoration:none; padding:5px 37px ; display:block;}
+
+    .logo{
+        width: 10%;
+    }
+    
+}
+
+
+@media(max-width:1200px){
+    .menu li a{color:white; text-decoration:none; padding:5px 10px ; display:block;}
+
+    .logo{
+        width: 5%;
+    }
+}
+
+@media(max-width:1250px){
+    .menu li a{color:white; text-decoration:none; padding:5px 9px ; display:block;}
+
+    .logo{
+        width: 5%;
+    }
+}
+
+@media(max-width:1000px) {
+    .menu li a{color:white; text-decoration:none; padding:5px 5px ; display:block;}
+
+    .logo{
+        width: 100%;
+    }
+}
+
+
+
+
+@media(max-width:810px) {
+
+    .header{
+        background-color: green;
+        
+    }
+
+    .titulos{
+        margin: 5px;
+        font-size: 15px;
+    }
+    .corpo{
+        margin: 5px;
+    }
+    .menu{
+        transition:all .4s;
+        
+        }
+    .barra{
+        margin-left: auto;
+        margin-right: 10%;
+
+    }
+    .logo{
+        display: none;
+    }
+
+    .menu{
+        text-align: center;
+        margin-top:5px;
+        }
+
+    .menu li{
+        background-color: green;
+        width: 100%;
+        float: none;
+    }
+    .menu li ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0px;
+        transition: .4s;
+    }
+    .menu li:hover ul, .menu li.over ul{
+        display:block;
+        height: auto;
+        max-height: 200px;
+        }
+    
+}
+
+
+
+/**
+ Menu Dropdown
+**/
